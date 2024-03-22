@@ -32,12 +32,8 @@
 		A7B483502B9F3FF80066B41C /* UniPortalFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B4834E2B9F3FF80066B41C /* UniPortalFormCell.swift */; };
 		A7B483512B9F3FF80066B41C /* UniPortalFormCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7B4834F2B9F3FF80066B41C /* UniPortalFormCell.xib */; };
 		A7B483542B9F40EB0066B41C /* UniPortalViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B483532B9F40EB0066B41C /* UniPortalViewModal.swift */; };
-		A7B483572B9F4A6D0066B41C /* UniPotalDobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B483552B9F4A6D0066B41C /* UniPotalDobCell.swift */; };
-		A7B483582B9F4A6D0066B41C /* UniPotalDobCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7B483562B9F4A6D0066B41C /* UniPotalDobCell.xib */; };
 		A7B4835B2B9F57730066B41C /* UniPortalHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B483592B9F57730066B41C /* UniPortalHeader.swift */; };
 		A7B4835C2B9F57730066B41C /* UniPortalHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7B4835A2B9F57730066B41C /* UniPortalHeader.xib */; };
-		A7B4835F2B9F674B0066B41C /* UniPortalSubmitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B4835D2B9F674B0066B41C /* UniPortalSubmitCell.swift */; };
-		A7B483602B9F674B0066B41C /* UniPortalSubmitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7B4835E2B9F674B0066B41C /* UniPortalSubmitCell.xib */; };
 		A7B483632B9F69240066B41C /* UniPortalChecksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B483612B9F69240066B41C /* UniPortalChecksCell.swift */; };
 		A7B483642B9F69240066B41C /* UniPortalChecksCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7B483622B9F69240066B41C /* UniPortalChecksCell.xib */; };
 		A7C342852BA2167B00CDD518 /* UniPortalLandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C342842BA2167B00CDD518 /* UniPortalLandingPage.swift */; };
@@ -77,12 +73,8 @@
 		A7B4834E2B9F3FF80066B41C /* UniPortalFormCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniPortalFormCell.swift; sourceTree = "<group>"; };
 		A7B4834F2B9F3FF80066B41C /* UniPortalFormCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UniPortalFormCell.xib; sourceTree = "<group>"; };
 		A7B483532B9F40EB0066B41C /* UniPortalViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniPortalViewModal.swift; sourceTree = "<group>"; };
-		A7B483552B9F4A6D0066B41C /* UniPotalDobCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniPotalDobCell.swift; sourceTree = "<group>"; };
-		A7B483562B9F4A6D0066B41C /* UniPotalDobCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UniPotalDobCell.xib; sourceTree = "<group>"; };
 		A7B483592B9F57730066B41C /* UniPortalHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniPortalHeader.swift; sourceTree = "<group>"; };
 		A7B4835A2B9F57730066B41C /* UniPortalHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UniPortalHeader.xib; sourceTree = "<group>"; };
-		A7B4835D2B9F674B0066B41C /* UniPortalSubmitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniPortalSubmitCell.swift; sourceTree = "<group>"; };
-		A7B4835E2B9F674B0066B41C /* UniPortalSubmitCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UniPortalSubmitCell.xib; sourceTree = "<group>"; };
 		A7B483612B9F69240066B41C /* UniPortalChecksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniPortalChecksCell.swift; sourceTree = "<group>"; };
 		A7B483622B9F69240066B41C /* UniPortalChecksCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UniPortalChecksCell.xib; sourceTree = "<group>"; };
 		A7C342842BA2167B00CDD518 /* UniPortalLandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniPortalLandingPage.swift; sourceTree = "<group>"; };
@@ -177,12 +169,8 @@
 			children = (
 				A7B4834E2B9F3FF80066B41C /* UniPortalFormCell.swift */,
 				A7B4834F2B9F3FF80066B41C /* UniPortalFormCell.xib */,
-				A7B483552B9F4A6D0066B41C /* UniPotalDobCell.swift */,
-				A7B483562B9F4A6D0066B41C /* UniPotalDobCell.xib */,
 				A7B483592B9F57730066B41C /* UniPortalHeader.swift */,
 				A7B4835A2B9F57730066B41C /* UniPortalHeader.xib */,
-				A7B4835D2B9F674B0066B41C /* UniPortalSubmitCell.swift */,
-				A7B4835E2B9F674B0066B41C /* UniPortalSubmitCell.xib */,
 				A7B483612B9F69240066B41C /* UniPortalChecksCell.swift */,
 				A7B483622B9F69240066B41C /* UniPortalChecksCell.xib */,
 				A7C3428D2BA51F6000CDD518 /* UniPortalAdminCell.swift */,
@@ -269,10 +257,8 @@
 			files = (
 				A77672802BA9EE3E00FB9BC4 /* Figtree-ExtraBoldItalic.ttf in Resources */,
 				A77672842BA9EE3E00FB9BC4 /* Figtree-BoldItalic.ttf in Resources */,
-				A7B483602B9F674B0066B41C /* UniPortalSubmitCell.xib in Resources */,
 				A77672852BA9EE3E00FB9BC4 /* Figtree-Italic.ttf in Resources */,
 				A77672812BA9EE3E00FB9BC4 /* Figtree-Medium.ttf in Resources */,
-				A7B483582B9F4A6D0066B41C /* UniPotalDobCell.xib in Resources */,
 				A776727D2BA9EE3E00FB9BC4 /* Figtree-SemiBoldItalic.ttf in Resources */,
 				A7B4835C2B9F57730066B41C /* UniPortalHeader.xib in Resources */,
 				A7B483512B9F3FF80066B41C /* UniPortalFormCell.xib in Resources */,
@@ -311,9 +297,7 @@
 				A7C342922BA521D100CDD518 /* UniPortalAdminViewModal.swift in Sources */,
 				A7B483632B9F69240066B41C /* UniPortalChecksCell.swift in Sources */,
 				A7B483542B9F40EB0066B41C /* UniPortalViewModal.swift in Sources */,
-				A7B483572B9F4A6D0066B41C /* UniPotalDobCell.swift in Sources */,
 				A7B4835B2B9F57730066B41C /* UniPortalHeader.swift in Sources */,
-				A7B4835F2B9F674B0066B41C /* UniPortalSubmitCell.swift in Sources */,
 				A7C3428F2BA51F6000CDD518 /* UniPortalAdminCell.swift in Sources */,
 				A7C3428A2BA4DD5900CDD518 /* NetworkMonitoring.swift in Sources */,
 				A7C3428C2BA4DEEF00CDD518 /* Extensions.swift in Sources */,

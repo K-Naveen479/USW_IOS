@@ -35,7 +35,8 @@ class UniPortalController: UIViewController {
     }
     
     @IBAction func submitClicked(_ sender: Any) {
-        if viewModal.checkIsAllFieldsFilled(controller: self) && viewModal.checkInternetWhileSubmit(controller: self) {
+        locationManager.requestWhenInUseAuthorization()
+        if viewModal.checkInternetWhileSubmit(controller: self) && viewModal.checkIsAllFieldsFilled(controller: self) {
             ServiceHelper.postResponseToApi(postData: ["prospect":viewModal.convertDataArrayForApi()]) { done,response  in
                 if done {
                     DispatchQueue.main.async {
@@ -65,7 +66,6 @@ class UniPortalController: UIViewController {
     func registerTableViewCells() {
         tableView.register(UINib(nibName: "UniPortalFormCell", bundle: nil), forCellReuseIdentifier: "UniPortalFormCell")
         tableView.register(UINib(nibName: "UniPortalHeader", bundle: nil), forCellReuseIdentifier: "UniPortalHeader")
-        tableView.register(UINib(nibName: "UniPortalSubmitCell", bundle: nil), forCellReuseIdentifier: "UniPortalSubmitCell")
         tableView.register(UINib(nibName: "UniPortalChecksCell", bundle: nil), forCellReuseIdentifier: "UniPortalChecksCell")
     }
     

@@ -39,6 +39,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lcy-J9-eC4">
+                                <rect key="frame" x="343" y="61" width="18" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="deN-pK-KO3"/>
+                                    <constraint firstAttribute="height" constant="18" id="hoF-Gs-THe"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -47,6 +54,8 @@
                             <constraint firstAttribute="bottom" secondItem="kLf-RJ-9MC" secondAttribute="bottom" constant="16" id="V1Q-Bo-WZU"/>
                             <constraint firstItem="Jj7-a4-GEa" firstAttribute="leading" secondItem="Y0E-Zi-qiO" secondAttribute="leading" constant="24" id="asr-Uc-4bn"/>
                             <constraint firstItem="kLf-RJ-9MC" firstAttribute="leading" secondItem="Y0E-Zi-qiO" secondAttribute="leading" constant="24" id="iJ7-S2-34L"/>
+                            <constraint firstItem="Lcy-J9-eC4" firstAttribute="centerY" secondItem="kLf-RJ-9MC" secondAttribute="centerY" id="vnE-AN-EcN"/>
+                            <constraint firstAttribute="trailing" secondItem="Lcy-J9-eC4" secondAttribute="trailing" constant="40" id="wBc-7z-k83"/>
                             <constraint firstAttribute="trailing" secondItem="Jj7-a4-GEa" secondAttribute="trailing" constant="24" id="wwN-0B-kAe"/>
                             <constraint firstAttribute="trailing" secondItem="kLf-RJ-9MC" secondAttribute="trailing" constant="24" id="yus-GN-J5k"/>
                         </constraints>
@@ -62,11 +71,12 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="dropdownIcon" destination="Lcy-J9-eC4" id="Tkq-s5-VIS"/>
                 <outlet property="mainView" destination="Y0E-Zi-qiO" id="w8s-Jd-jR8"/>
                 <outlet property="titleLabel" destination="Jj7-a4-GEa" id="KOx-yi-acf"/>
                 <outlet property="txtField" destination="kLf-RJ-9MC" id="nDi-rn-fvv"/>
             </connections>
-            <point key="canvasLocation" x="199.23664122137404" y="40.492957746478872"/>
+            <point key="canvasLocation" x="199.23664122137404" y="39.7887323943662"/>
         </tableViewCell>
     </objects>
 </document>

@@ -13,21 +13,6 @@ class UniPortalAdminViewModal  {
     
     var processedAreas = Set<String>()
     
-    var DummyData = [["Full Name" : "Naveen",
-                      "Date of birth" : "16",
-                      "Email": "naveenk@ekincare.com",
-                      "Area of intrests" : "Engineering",
-                      "Postcode" : "12345",
-                      "Marketing Updated" :"Yes",
-                      "Corresponding Updated" :"Yes"
-                     ],["Full Name" : "Naveen",
-                        "Date of birth" : "16",
-                        "Email": "naveenk@ekincare.com",
-                        "Area of intrests" : "Engineering",
-                        "Postcode" : "12345",
-                        "Marketing Updated" :"Yes",
-                        "Corresponding Updated" :"Yes"]] as [[String:Any]]
-    
     func createDataArray(completionHandler:@escaping() -> (Void)) {
         ServiceHelper.fetchResponseFromApi { response in
             self.dataArray.removeAll()

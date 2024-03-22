@@ -13,6 +13,7 @@ protocol UniPortalFormCellProtocol : AnyObject {
 
 class UniPortalFormCell: UITableViewCell {
     
+    @IBOutlet weak var dropdownIcon: UIImageView!
     @IBOutlet weak var txtField: UITextField!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var mainView: UIView!
@@ -63,7 +64,7 @@ class UniPortalFormCell: UITableViewCell {
         txtField.text = data.data
         let attributes = [
             NSAttributedString.Key.foregroundColor: UIColor(red: 164/255, green: 176/255, blue: 204/255, alpha: 1.0),
-            NSAttributedString.Key.font : UIFont(name: "Figtree-SemiBold", size: 16)! // Note the !
+            NSAttributedString.Key.font : UIFont(name: "Figtree-SemiBold", size: 14)! // Note the !
         ]
 
         txtField.attributedPlaceholder = NSAttributedString(string: data.placeHolder, attributes:attributes)
@@ -73,6 +74,8 @@ class UniPortalFormCell: UITableViewCell {
     func setUpViews() {
         addDoneButtonToToolBar()
         if cellType == .dateOfBirth {
+            dropdownIcon.isHidden = false
+            dropdownIcon.image = UIImage(named: "dobDropDown")
             var components = DateComponents()
             components.year = -16
             let minDate = Calendar.current.date(byAdding: components, to: Date())
@@ -93,12 +96,14 @@ class UniPortalFormCell: UITableViewCell {
             txtField.inputView = datePickerView
             datePickerView.addTarget(self, action: #selector(datePickerValueChanged), for: UIControl.Event.valueChanged)
         }else if cellType == .areaOfIntrests {
+            dropdownIcon.isHidden = false
+            dropdownIcon.image = UIImage(named: "Triangle")
             let pickerView = UIPickerView()
             pickerView.delegate = self
             pickerView.dataSource = self
-            
-            // Set input view for the text field
             txtField.inputView = pickerView
+        }else {
+            dropdownIcon.isHidden = true
         }
     }
     

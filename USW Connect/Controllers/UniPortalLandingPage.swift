@@ -15,12 +15,20 @@ class UniPortalLandingPage: UIViewController {
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var logoImageView: UIImageView!
     
+    @IBOutlet weak var bgImageView: UIImageView!
+    @IBOutlet weak var welcomeLabelTop: NSLayoutConstraint!
+    @IBOutlet weak var logoViewTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var logoImageWidth: NSLayoutConstraint!
+    @IBOutlet weak var logoImageHeight: NSLayoutConstraint!
+    @IBOutlet weak var borderLabelTop: NSLayoutConstraint!
+    @IBOutlet weak var borderLabelBottom: NSLayoutConstraint!
+    @IBOutlet weak var bgViewBottom: NSLayoutConstraint!
+    
     let mainStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         mainView.backgroundColor = .white
-        addBackgroundImage()
         bgView.bringSubviewToFront(logoImageView)
         bgView.layer.cornerRadius = 10.0
         bgView.clipsToBounds = false
@@ -29,21 +37,45 @@ class UniPortalLandingPage: UIViewController {
         adminButton.layer.cornerRadius = 6.0
     }
     
-    func addBackgroundImage() {
-        let imageView = UIImageView(frame: self.view.bounds)
-        imageView.contentMode = .scaleAspectFit
-        imageView.clipsToBounds = true // Ensures the image doesn't overflow its bounds
-        
-        // Replace "yourImageName" with the name of your image asset
-        if let backgroundImage = UIImage(named: "USW_bg") {
-            imageView.image = backgroundImage
-        }
-        
-        // Add the UIImageView as a subview to the view
-        self.mainView.addSubview(imageView)
-        
-        // Ensure the image view is behind all other views
-        self.mainView.sendSubviewToBack(imageView)
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+
+        super.viewWillTransition(to: size, with: coordinator)
+        coordinator.animate(alongsideTransition: { context in
+            
+            let orientation = UIDevice.current.orientation
+            if let imageView = self.bgImageView.viewWithTag(999) as? UIImageView {
+                if orientation == .portrait {
+                    if let backgroundImage = UIImage(named: "USW_bg") {
+                        imageView.image = backgroundImage
+                    }
+                    self.bgViewBottom.constant = 58.0
+                    self.borderLabelTop.constant = 32.0
+                    self.borderLabelBottom.constant = 32.0
+                    self.logoImageWidth.constant = 167.0
+                    self.logoImageHeight.constant = 167.0
+                    self.logoViewTopConstraint.constant = -83.0
+                    self.welcomeLabelTop.constant = 23.0
+                }
+                else {
+                    if let backgroundImage = UIImage(named: "USW_Landscape") {
+                        imageView.image = backgroundImage
+                    }
+                    self.bgViewBottom.constant = 8.0
+                    self.borderLabelTop.constant = 4.0
+                    self.borderLabelBottom.constant = 4.0
+                    self.logoImageWidth.constant = 120.0
+                    self.logoImageHeight.constant = 120.0
+                    self.logoViewTopConstraint.constant = -50.0
+                    self.welcomeLabelTop.constant = 0.0
+                    
+                }
+            }
+            self.view.layoutIfNeeded()
+
+        }, completion: {
+            _ in
+        })
+
     }
 
     @IBAction func adminPortalClicked(_ sender: Any) {

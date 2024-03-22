@@ -104,7 +104,7 @@ class UniPortalViewModal {
                     return false
                 }
             default:
-                break 
+                break
             }
         }
         return true
@@ -133,7 +133,7 @@ class UniPortalViewModal {
         if CheckInternet.Connection() {
             return true
         }else {
-            showAlert(controller: controller, message: "Please connect the internet to submit", title: "Internet error")
+            showAlert(controller: controller, message: "Please connect the internet to submit.Data stored locally", title: "Internet error")
             return false
         }
     }

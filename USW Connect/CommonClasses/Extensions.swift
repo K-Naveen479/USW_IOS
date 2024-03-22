@@ -74,6 +74,33 @@ extension UILabel {
     }
 }
 
+extension Dictionary {
+    func getStringValue(key:Key,defaultValue:String = "") -> String {
+        var id = defaultValue
+        if let idString = self[key] as? String {
+            id = idString
+        }
+        else if let idInt = self[key] as? Int {
+            id = "\(idInt)"
+        }
+        else if let idInt = self[key] as? Double {
+            id = "\(idInt)"
+        }
+        return id
+    }
+    
+    func getBoolValue(key:Key,defaultValue:Bool = false) -> Bool {
+        var boolValue = defaultValue
+        if let idString = self[key] as? Bool {
+            boolValue = idString
+        }
+        else if let idInt = self[key] as? Int {
+            boolValue = idInt == 0 ? false : true
+        }
+        return boolValue
+    }
+}
+
 
 extension UniPortalController:CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -169,29 +196,3 @@ extension UniPortalController:CLLocationManagerDelegate {
     }
 }
 
-extension Dictionary {
-    func getStringValue(key:Key,defaultValue:String = "") -> String {
-        var id = defaultValue
-        if let idString = self[key] as? String {
-            id = idString
-        }
-        else if let idInt = self[key] as? Int {
-            id = "\(idInt)"
-        }
-        else if let idInt = self[key] as? Double {
-            id = "\(idInt)"
-        }
-        return id
-    }
-    
-    func getBoolValue(key:Key,defaultValue:Bool = false) -> Bool {
-        var boolValue = defaultValue
-        if let idString = self[key] as? Bool {
-            boolValue = idString
-        }
-        else if let idInt = self[key] as? Int {
-            boolValue = idInt == 0 ? false : true
-        }
-        return boolValue
-    }
-}

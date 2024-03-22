@@ -28,10 +28,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JgN-70-rgx">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="USW_bg" translatesAutoresizingMaskIntoConstraints="NO" id="wRq-ay-Q6V">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                    </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GDD-El-Z3l">
-                                        <rect key="frame" x="24" y="337" width="345" height="423"/>
+                                        <rect key="frame" x="24" y="371" width="345" height="423"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8S-xw-BqL">
                                                 <rect key="frame" x="24" y="107" width="297" height="24"/>
@@ -115,7 +118,7 @@
                                             <constraint firstItem="nLL-GJ-LVo" firstAttribute="top" secondItem="shn-gc-YAJ" secondAttribute="bottom" constant="32" id="VcM-Ia-pwO"/>
                                             <constraint firstItem="Os8-zX-OtC" firstAttribute="leading" secondItem="GDD-El-Z3l" secondAttribute="leading" constant="16" id="aOW-RB-zao"/>
                                             <constraint firstAttribute="trailing" secondItem="v8S-xw-BqL" secondAttribute="trailing" constant="24" id="bF2-ys-Z0L"/>
-                                            <constraint firstItem="v8S-xw-BqL" firstAttribute="top" secondItem="GDD-El-Z3l" secondAttribute="top" constant="107" id="cKI-qo-lwK"/>
+                                            <constraint firstItem="v8S-xw-BqL" firstAttribute="top" secondItem="L8W-i5-V8s" secondAttribute="bottom" constant="23" id="cKI-qo-lwK"/>
                                             <constraint firstItem="v8S-xw-BqL" firstAttribute="leading" secondItem="GDD-El-Z3l" secondAttribute="leading" constant="24" id="fdl-xc-MjG"/>
                                             <constraint firstItem="PCq-nQ-NmC" firstAttribute="top" secondItem="nLL-GJ-LVo" secondAttribute="bottom" constant="32" id="hgD-ot-hvv"/>
                                             <constraint firstAttribute="trailing" secondItem="nLL-GJ-LVo" secondAttribute="trailing" constant="16" id="lzz-pc-kjM"/>
@@ -128,9 +131,12 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="GDD-El-Z3l" firstAttribute="leading" secondItem="JgN-70-rgx" secondAttribute="leading" constant="24" id="J1n-vi-SXE"/>
+                                    <constraint firstAttribute="trailing" secondItem="wRq-ay-Q6V" secondAttribute="trailing" id="LRb-cJ-RX3"/>
                                     <constraint firstAttribute="bottom" secondItem="GDD-El-Z3l" secondAttribute="bottom" constant="58" id="TEM-0Q-ghO"/>
-                                    <constraint firstItem="GDD-El-Z3l" firstAttribute="top" relation="greaterThanOrEqual" secondItem="JgN-70-rgx" secondAttribute="top" constant="40" id="f1M-Cc-hfc"/>
                                     <constraint firstAttribute="trailing" secondItem="GDD-El-Z3l" secondAttribute="trailing" constant="24" id="ghV-6l-jlg"/>
+                                    <constraint firstAttribute="bottom" secondItem="wRq-ay-Q6V" secondAttribute="bottom" id="kJU-bm-iVd"/>
+                                    <constraint firstItem="wRq-ay-Q6V" firstAttribute="top" secondItem="JgN-70-rgx" secondAttribute="top" id="n4o-Yr-5ZK"/>
+                                    <constraint firstItem="wRq-ay-Q6V" firstAttribute="leading" secondItem="JgN-70-rgx" secondAttribute="leading" id="rVE-5L-Bye"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -138,18 +144,28 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="JgN-70-rgx" firstAttribute="top" secondItem="def-4Z-thW" secondAttribute="top" id="SV9-Uy-X7W"/>
-                            <constraint firstItem="JgN-70-rgx" firstAttribute="leading" secondItem="2L9-0y-BiM" secondAttribute="leading" id="fgd-Iu-h68"/>
-                            <constraint firstItem="2L9-0y-BiM" firstAttribute="bottom" secondItem="JgN-70-rgx" secondAttribute="bottom" id="wRy-5G-Nj9"/>
-                            <constraint firstItem="2L9-0y-BiM" firstAttribute="trailing" secondItem="JgN-70-rgx" secondAttribute="trailing" id="zSR-t5-XbK"/>
+                            <constraint firstItem="JgN-70-rgx" firstAttribute="leading" secondItem="def-4Z-thW" secondAttribute="leading" id="fgd-Iu-h68"/>
+                            <constraint firstAttribute="bottom" secondItem="JgN-70-rgx" secondAttribute="bottom" id="wRy-5G-Nj9"/>
+                            <constraint firstAttribute="trailing" secondItem="JgN-70-rgx" secondAttribute="trailing" id="zSR-t5-XbK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="TI8-ZJ-Xdi"/>
+                    <navigationItem key="navigationItem" id="TI8-ZJ-Xdi">
+                        <nil key="title"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="adminButton" destination="Os8-zX-OtC" id="Uto-RU-Ees"/>
+                        <outlet property="bgImageView" destination="wRq-ay-Q6V" id="Zgn-H1-ywc"/>
                         <outlet property="bgView" destination="GDD-El-Z3l" id="KTC-VT-atl"/>
+                        <outlet property="bgViewBottom" destination="TEM-0Q-ghO" id="hHZ-Sk-mMV"/>
+                        <outlet property="borderLabelBottom" destination="hgD-ot-hvv" id="WZJ-tj-p0U"/>
+                        <outlet property="borderLabelTop" destination="VcM-Ia-pwO" id="6gF-GN-zmh"/>
+                        <outlet property="logoImageHeight" destination="mO7-Ap-LGZ" id="ayJ-3G-SE4"/>
                         <outlet property="logoImageView" destination="L8W-i5-V8s" id="BOQ-uO-3Ii"/>
+                        <outlet property="logoImageWidth" destination="oNG-US-KgC" id="eDU-ot-pv3"/>
+                        <outlet property="logoViewTopConstraint" destination="QdA-L2-CGG" id="Inl-3d-zJU"/>
                         <outlet property="mainView" destination="JgN-70-rgx" id="A6j-6h-H9k"/>
                         <outlet property="studentButton" destination="OX7-D4-lnP" id="DsW-p4-tvT"/>
+                        <outlet property="welcomeLabelTop" destination="cKI-qo-lwK" id="PZ5-Or-ISf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7eG-LD-mEG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -496,6 +512,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="USW_bg" width="375" height="812"/>
         <image name="USW_circle" width="260" height="260"/>
         <image name="add_button" width="24" height="24"/>
         <image name="arrow-left" width="24" height="24"/>
