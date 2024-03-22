@@ -257,6 +257,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="submitButton" destination="ObL-lU-gna" id="k15-iU-xQi"/>
                         <outlet property="tableView" destination="7Nr-34-FTh" id="4Bg-vs-umX"/>
                     </connections>
                 </viewController>
