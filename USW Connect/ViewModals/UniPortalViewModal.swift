@@ -133,7 +133,8 @@ class UniPortalViewModal {
         if CheckInternet.Connection() {
             return true
         }else {
-            showAlert(controller: controller, message: "Please connect the internet to submit.Data stored locally", title: "Internet error")
+            storeDataInLocalDataBase()
+            showAlert(controller: controller, message: "To submit, please ensure your device is connected to the internet. Your data is currently stored locally.", title: "Internet Connection Required")
             return false
         }
     }

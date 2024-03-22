@@ -42,8 +42,8 @@ class UniPortalController: UIViewController {
             ServiceHelper.postResponseToApi(postData: ["prospect":viewModal.convertDataArrayForApi()]) { done,response  in
                 if done {
                     DispatchQueue.main.async {
+                        UserDefaults.standard.removeObject(forKey: self.viewModal.dataArrayKey)
                         self.reuseDataArray()
-                        self.viewModal.storeDataInLocalDataBase()
                         self.viewModal.showAlert(controller: self, message: "Your details submitted to database",title: "Success")
                     }
                 }else {

@@ -30,7 +30,7 @@ class UniProtalAdminPinController: UIViewController {
         txtField.keyboardType = .numberPad
         let attributes = [
             NSAttributedString.Key.foregroundColor: UIColor(red: 164/255, green: 176/255, blue: 204/255, alpha: 1.0),
-            NSAttributedString.Key.font : UIFont(name: "Figtree-SemiBold", size: 16)! // Note the !
+            NSAttributedString.Key.font : UIFont(name: "Figtree-SemiBold", size: 16)!
         ]
 
         txtField.attributedPlaceholder = NSAttributedString(string: "Enter your passcode", attributes:attributes)

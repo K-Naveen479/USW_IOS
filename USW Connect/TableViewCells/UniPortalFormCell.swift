@@ -64,7 +64,7 @@ class UniPortalFormCell: UITableViewCell {
         txtField.text = data.data
         let attributes = [
             NSAttributedString.Key.foregroundColor: UIColor(red: 164/255, green: 176/255, blue: 204/255, alpha: 1.0),
-            NSAttributedString.Key.font : UIFont(name: "Figtree-SemiBold", size: 14)! // Note the !
+            NSAttributedString.Key.font : UIFont(name: "Figtree-SemiBold", size: 14)!
         ]
 
         txtField.attributedPlaceholder = NSAttributedString(string: data.placeHolder, attributes:attributes)
