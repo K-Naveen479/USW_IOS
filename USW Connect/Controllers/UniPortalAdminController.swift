@@ -58,11 +58,13 @@ class UniPortalAdminController: UIViewController {
 extension UniPortalAdminController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            tableView.beginUpdates()
-            ServiceHelper.deleteDataFromDatabase(id: viewModal.dataArray[indexPath.row].data["id"] as! Int) { done in
-                self.reuseForCreateArray()
+            if viewModal.checkInternetWhileSubmit(controller: self) {
+                tableView.beginUpdates()
+                ServiceHelper.deleteDataFromDatabase(id: viewModal.dataArray[indexPath.row].data["id"] as! Int) { done in
+                    self.reuseForCreateArray()
+                }
+                tableView.endUpdates()
             }
-            tableView.endUpdates()
         }
     }
 }

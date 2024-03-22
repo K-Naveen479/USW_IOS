@@ -6,12 +6,29 @@
 //
 
 import Foundation
+import UIKit
 
 class UniPortalAdminViewModal  {
     
     var dataArray = [UniPortalAdminCellData]()
     
     var processedAreas = Set<String>()
+    
+    func checkInternetWhileSubmit(controller:UIViewController) -> Bool {
+        if CheckInternet.Connection() {
+            return true
+        }else {
+            showAlert(controller: controller, message: "To Delete, please ensure your device is connected to the internet.", title: "Internet Connection Required")
+            return false
+        }
+    }
+    
+    func showAlert(controller:UIViewController,message:String,title:String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        controller.present(alertController, animated: true, completion: nil)
+    }
     
     func createDataArray(completionHandler:@escaping() -> (Void)) {
         ServiceHelper.fetchResponseFromApi { response in
