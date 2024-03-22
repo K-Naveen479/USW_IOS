@@ -163,15 +163,15 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7t6-wa-SAF">
                                         <rect key="frame" x="16" y="18" width="613" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="Juo-OJ-RJu"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Figtree-SemiBold" family="Figtree" pointSize="12"/>
                                         <color key="textColor" red="0.48627450980392156" green="0.5490196078431373" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4E-bK-4Eh">
                                         <rect key="frame" x="653" y="15.666666666666659" width="39" height="18.666666666666679"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="400" id="r95-0k-yqb"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" name="Figtree-SemiBold" family="Figtree" pointSize="16"/>
                                         <color key="textColor" red="0.30196078431372547" green="0.38039215686274508" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>

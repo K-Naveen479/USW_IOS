@@ -13,15 +13,21 @@ class UniPortalAdminController: UIViewController {
     
     let mainStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
 
-
+    @IBOutlet weak var syncButton: UIButton!
+    
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        syncButton.layer.cornerRadius = 6.0
         registerTableViewCells()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        reuseForCreateArray()
+    }
+    
+    @IBAction func syncClicked(_ sender: Any) {
         reuseForCreateArray()
     }
     
