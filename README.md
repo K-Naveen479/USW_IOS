@@ -9,8 +9,8 @@ Follow these steps to run the project on your local machine:
 
 ### Clone the repository:
 bash
-git clone https://github.com/your_username/project_name.git
-cd project_name
+git clone https://github.com/K-Naveen479/USW_IOS.git
+cd USW_IOS
 
 ### Open the project in Xcode:
 Navigate to the project folder in Finder.
@@ -25,5 +25,8 @@ Alternatively, you can use the shortcut Cmd + R.
 
 ### Explore the app:
 Once the project is successfully built and running, explore the functionalities of the app.
+
+### Admin Pin:
+1234
 
 
