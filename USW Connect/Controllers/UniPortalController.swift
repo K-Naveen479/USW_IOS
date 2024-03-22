@@ -10,6 +10,7 @@ import CoreLocation
 
 class UniPortalController: UIViewController {
 
+    @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
     var viewModal = UniPortalViewModal()
@@ -21,6 +22,7 @@ class UniPortalController: UIViewController {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         navigationController?.isNavigationBarHidden = true
+        submitButton.layer.cornerRadius = 6.0
         registerTableViewCells()
         reuseDataArray()
     }

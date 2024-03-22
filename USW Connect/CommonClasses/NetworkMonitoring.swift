@@ -161,7 +161,7 @@ public class ServiceHelper {
             }
             
             // Check if response contains data
-            guard let responseData = data else {
+            guard let _ = data else {
                 print("No data received")
                 return
             }
