@@ -38,7 +38,7 @@ public class CheckInternet{
 
 public class ServiceHelper {
     class func fetchResponseFromApi(completionHandler:@escaping([[String:Any]]) -> (Void)) {
-        guard let url = URL(string: "http://localhost:3000/prospects") else {
+        guard let url = URL(string: "https://usw-backend-0b64bd4de9c8.herokuapp.com/prospects") else {
             print("Invalid URL")
             return
         }
@@ -73,7 +73,7 @@ public class ServiceHelper {
     
     class func postResponseToApi(postData:[String: Any],completionHandler:@escaping (Bool,[String:Any]) -> (Void)) {
         // API endpoint URL
-        guard let url = URL(string: "http://localhost:3000/prospects") else {
+        guard let url = URL(string: "https://usw-backend-0b64bd4de9c8.herokuapp.com/prospects") else {
             print("Invalid URL")
             return
         }
@@ -140,7 +140,7 @@ public class ServiceHelper {
     }
     
     class func deleteDataFromDatabase(id:Int,completionHandler:@escaping(Bool) -> (Void)) {
-        guard let url = URL(string: "http://localhost:3000/prospects/\(id)") else {
+        guard let url = URL(string: "https://usw-backend-0b64bd4de9c8.herokuapp.com/prospects/\(id)") else {
             print("Invalid URL")
             return
         }

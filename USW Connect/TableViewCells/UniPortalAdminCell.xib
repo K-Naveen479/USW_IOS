@@ -26,10 +26,10 @@
                         <rect key="frame" x="16" y="16" width="708" height="315"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZ8-Kr-ic7">
-                                <rect key="frame" x="0.0" y="0.0" width="708" height="46.666666666666664"/>
+                                <rect key="frame" x="0.0" y="0.0" width="708" height="45"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qA6-mR-RiS">
-                                        <rect key="frame" x="16" y="45.666666666666664" width="676" height="1"/>
+                                        <rect key="frame" x="16" y="44" width="676" height="1"/>
                                         <color key="backgroundColor" red="0.89803921568627454" green="0.90980392156862744" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="CTc-2Q-jf0"/>
@@ -39,13 +39,16 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6Z-ea-vIG">
-                                        <rect key="frame" x="16" y="18" width="613" height="15.666666666666664"/>
+                                        <rect key="frame" x="16" y="18" width="613" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="Tvb-w3-VGq"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Figtree-SemiBold" family="Figtree" pointSize="12"/>
                                         <color key="textColor" red="0.48627450980392156" green="0.5490196078431373" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGz-Hp-j7i">
-                                        <rect key="frame" x="653" y="16" width="39" height="20"/>
+                                        <rect key="frame" x="653" y="15.666666666666666" width="39" height="18.666666666666679"/>
                                         <fontDescription key="fontDescription" name="Figtree-SemiBold" family="Figtree" pointSize="16"/>
                                         <color key="textColor" red="0.30196078431372547" green="0.38039215686274508" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -65,10 +68,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xRI-6K-dMe">
-                                <rect key="frame" x="0.0" y="46.666666666666671" width="708" height="46.666666666666671"/>
+                                <rect key="frame" x="0.0" y="45" width="708" height="45"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qz4-2x-d0S">
-                                        <rect key="frame" x="16" y="45.666666666666664" width="676" height="1"/>
+                                        <rect key="frame" x="16" y="44" width="676" height="1"/>
                                         <color key="backgroundColor" red="0.8980392157" green="0.90980392160000001" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="TiA-l4-zaU"/>
@@ -78,13 +81,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wx5-XE-ObN">
-                                        <rect key="frame" x="16" y="18.000000000000007" width="613" height="15.666666666666664"/>
+                                        <rect key="frame" x="16" y="18" width="613" height="14"/>
                                         <fontDescription key="fontDescription" name="Figtree-SemiBold" family="Figtree" pointSize="12"/>
                                         <color key="textColor" red="0.48627450980392156" green="0.5490196078431373" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDm-cd-bw4">
-                                        <rect key="frame" x="653" y="16.000000000000007" width="39" height="20"/>
+                                        <rect key="frame" x="653" y="15.666666666666673" width="39" height="18.666666666666679"/>
                                         <fontDescription key="fontDescription" name="Figtree-SemiBold" family="Figtree" pointSize="16"/>
                                         <color key="textColor" red="0.30196078431372547" green="0.38039215686274508" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -104,10 +107,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIi-4W-wYN">
-                                <rect key="frame" x="0.0" y="93.333333333333329" width="708" height="46.666666666666671"/>
+                                <rect key="frame" x="0.0" y="90" width="708" height="45"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWG-jA-VCq">
-                                        <rect key="frame" x="16" y="45.666666666666671" width="676" height="1"/>
+                                        <rect key="frame" x="16" y="44" width="676" height="1"/>
                                         <color key="backgroundColor" red="0.8980392157" green="0.90980392160000001" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="Eeh-lS-Gu8"/>
@@ -116,14 +119,17 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHb-0W-tG2">
-                                        <rect key="frame" x="16" y="18" width="613" height="15.666666666666664"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHb-0W-tG2">
+                                        <rect key="frame" x="16" y="18" width="50" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="gGj-tP-Wuv"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Figtree-SemiBold" family="Figtree" pointSize="12"/>
                                         <color key="textColor" red="0.48627450980392156" green="0.5490196078431373" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAp-f2-N2L">
-                                        <rect key="frame" x="653" y="16" width="39" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAp-f2-N2L">
+                                        <rect key="frame" x="74" y="15.666666666666673" width="618" height="18.666666666666679"/>
                                         <fontDescription key="fontDescription" name="Figtree-SemiBold" family="Figtree" pointSize="16"/>
                                         <color key="textColor" red="0.30196078431372547" green="0.38039215686274508" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -137,16 +143,16 @@
                                     <constraint firstAttribute="trailing" secondItem="TWG-jA-VCq" secondAttribute="trailing" constant="16" id="BLU-UF-sFw"/>
                                     <constraint firstItem="sHb-0W-tG2" firstAttribute="leading" secondItem="VIi-4W-wYN" secondAttribute="leading" constant="16" id="CeZ-JO-grh"/>
                                     <constraint firstItem="sHb-0W-tG2" firstAttribute="top" secondItem="VIi-4W-wYN" secondAttribute="top" constant="18" id="D2k-cp-95i"/>
-                                    <constraint firstItem="gAp-f2-N2L" firstAttribute="leading" secondItem="sHb-0W-tG2" secondAttribute="trailing" constant="24" id="UXb-Bu-FPU"/>
+                                    <constraint firstItem="gAp-f2-N2L" firstAttribute="leading" secondItem="sHb-0W-tG2" secondAttribute="trailing" constant="8" id="UXb-Bu-FPU"/>
                                     <constraint firstAttribute="bottom" secondItem="TWG-jA-VCq" secondAttribute="bottom" id="Zfh-zt-w5d"/>
                                     <constraint firstItem="TWG-jA-VCq" firstAttribute="leading" secondItem="VIi-4W-wYN" secondAttribute="leading" constant="16" id="o7e-Mq-fHB"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdR-GI-r2r">
-                                <rect key="frame" x="0.0" y="140" width="708" height="46.666666666666657"/>
+                                <rect key="frame" x="0.0" y="135" width="708" height="45"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycT-DS-glq">
-                                        <rect key="frame" x="16" y="45.666666666666657" width="676" height="1"/>
+                                        <rect key="frame" x="16" y="44" width="676" height="1"/>
                                         <color key="backgroundColor" red="0.8980392157" green="0.90980392160000001" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="BOe-kX-Red"/>
@@ -155,14 +161,14 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7t6-wa-SAF">
-                                        <rect key="frame" x="16" y="18" width="252" height="15.666666666666664"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7t6-wa-SAF">
+                                        <rect key="frame" x="16" y="18" width="613" height="14"/>
                                         <fontDescription key="fontDescription" name="Figtree-SemiBold" family="Figtree" pointSize="12"/>
                                         <color key="textColor" red="0.48627450980392156" green="0.5490196078431373" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4E-bK-4Eh">
-                                        <rect key="frame" x="292" y="16" width="400" height="20"/>
+                                        <rect key="frame" x="653" y="15.666666666666659" width="39" height="18.666666666666679"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="400" id="r95-0k-yqb"/>
                                         </constraints>
@@ -185,10 +191,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b7w-nK-DZ5">
-                                <rect key="frame" x="0.0" y="186.66666666666666" width="708" height="46.666666666666657"/>
+                                <rect key="frame" x="0.0" y="180" width="708" height="45"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8Z-sb-6vH">
-                                        <rect key="frame" x="16" y="45.666666666666686" width="676" height="1"/>
+                                        <rect key="frame" x="16" y="44" width="676" height="1"/>
                                         <color key="backgroundColor" red="0.8980392157" green="0.90980392160000001" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="IWz-Rc-lPL"/>
@@ -198,13 +204,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3B-Np-zIE">
-                                        <rect key="frame" x="16" y="18" width="613" height="15.666666666666664"/>
+                                        <rect key="frame" x="16" y="18" width="613" height="14"/>
                                         <fontDescription key="fontDescription" name="Figtree-SemiBold" family="Figtree" pointSize="12"/>
                                         <color key="textColor" red="0.48627450980392156" green="0.5490196078431373" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ah2-Pv-RO8">
-                                        <rect key="frame" x="653" y="16" width="39" height="20"/>
+                                        <rect key="frame" x="653" y="15.666666666666659" width="39" height="18.666666666666679"/>
                                         <fontDescription key="fontDescription" name="Figtree-SemiBold" family="Figtree" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -224,10 +230,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="54d-9g-494">
-                                <rect key="frame" x="0.0" y="233.33333333333334" width="708" height="81.666666666666657"/>
+                                <rect key="frame" x="0.0" y="225" width="708" height="90"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRi-yi-p1T">
-                                        <rect key="frame" x="16" y="80.666666666666657" width="676" height="1"/>
+                                        <rect key="frame" x="16" y="89" width="676" height="1"/>
                                         <color key="backgroundColor" red="0.8980392157" green="0.90980392160000001" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="mLT-gA-5Ce"/>
@@ -237,13 +243,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="umT-ud-mBC">
-                                        <rect key="frame" x="16" y="17.999999999999968" width="613" height="50.666666666666657"/>
+                                        <rect key="frame" x="16" y="18" width="613" height="59"/>
                                         <fontDescription key="fontDescription" name="Figtree-SemiBold" family="Figtree" pointSize="12"/>
                                         <color key="textColor" red="0.48627450980392156" green="0.5490196078431373" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEz-uR-4Cn">
-                                        <rect key="frame" x="653" y="33.333333333333343" width="39" height="20"/>
+                                        <rect key="frame" x="653" y="38.333333333333314" width="39" height="18.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Figtree-SemiBold" family="Figtree" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>

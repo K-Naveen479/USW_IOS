@@ -25,6 +25,7 @@ class UniProtalAdminPinController: UIViewController {
     }
     
     func setUpViews() {
+        addDoneButtonToToolBar()
         passcodeHeader.setText(text: "PASSCODE", withKerning: 1.0)
         txtField.keyboardType = .numberPad
         let attributes = [
@@ -34,6 +35,21 @@ class UniProtalAdminPinController: UIViewController {
 
         txtField.attributedPlaceholder = NSAttributedString(string: "Enter your passcode", attributes:attributes)
         submitButton.layer.cornerRadius = 6.0
+    }
+    
+    func addDoneButtonToToolBar() {
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        
+        let additonalSpace = UIBarButtonItem(systemItem: .flexibleSpace, primaryAction: nil)
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonClicked))
+        toolbar.setItems([additonalSpace,doneButton], animated: false)
+        
+        txtField.inputAccessoryView = toolbar
+    }
+    
+    @objc func doneButtonClicked() {
+        txtField.resignFirstResponder()
     }
     
 
